@@ -1,0 +1,111 @@
+/* src/components/Nav.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+    background-color: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Navbar Links Container */
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  /* Logo Styling */
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4caf50;
+    text-decoration: none;
+  }
+  
+  /* Navigation Links */
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover {
+    color: #4caf50;
+  }
+  
+  /* General Button Styling */
+  .nav-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .nav-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Logout Button */
+  .logout {
+    background-color: #dc3545;
+  }
+  
+  .logout:hover {
+    background-color: #c82333;
+  }
+  
+  /* Dark Mode Button */
+  .dark-mode {
+    background-color: #444;
+  }
+  
+  .dark-mode:hover {
+    background-color: #666;
+  }
+  
+  /* Dark Mode Styles */
+  body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  
+  body.dark-mode .navbar {
+    background-color: #222;
+  }
+  
+  body.dark-mode .nav-link,
+  body.dark-mode .nav-button {
+    color: #e0e0e0;
+  }
+  
+  body.dark-mode .nav-link:hover {
+    color: #4caf50;
+  }
+  
+  /* Mobile Responsive */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 10px;
+    }
+  
+    .nav-link,
+    .nav-button {
+      width: 100%;
+      text-align: left;
+    }
+  }
+  
+  
